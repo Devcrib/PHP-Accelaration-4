@@ -1,14 +1,17 @@
 <? include 'views/view-stubs/header.php'; ?>
     <section class = "view-profile">
         <div class = "inner-profile">
+        <?php $user = $allUsers->singleUser($_GET['id']); ?>
             <div class="sidebar">
-                <div class="profile-pic"></div>
+                <div class="profile-pic">
+                <img src="<?= $user->picture ?>" alt="<?= $user->name ?>">
+                </div>
                 <div class="info">
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>Name: <?= $user->name; ?></li>
+                        <li>Age: <?= $user->age; ?></li>
+                        <li>Gender: <?= $user->gender; ?></li>
+                        <li>Email: <?= $user->email; ?></li>
                     </ul>
                 </div>
             </div>
