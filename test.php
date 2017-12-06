@@ -34,16 +34,7 @@
 
     }
 
-
     $allUsers = new User('Appendix');
-//    var_dump($allUsers->getAllUsers());
-
-// for($i = 0; $i < 500; $i++) {
-//     $currentUser = $allUsers->singleUser($i);
-//     var_dump( $currentUser->tags). '<br>';
-// }
-
-//($allUsers->getKeyVal('isActive', 'true'));
 
 
 

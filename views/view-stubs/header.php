@@ -8,6 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/3rd/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/3rd/font-awesome.min.css">
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Open+Sans:300,400" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu|Titillium+Web" rel="stylesheet">
     <title>Dealing with Data</title>
 </head>
 <body>
