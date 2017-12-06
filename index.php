@@ -21,7 +21,7 @@
         <div class="col-3 animated wow fadeIn" data-wow-delay=".7s" data-wow-duration=".9s">
             <div class="inner-body">
                 <div class="content"><img src="<?php echo $currentuser->picture; ?>" alt="<?php echo $currentuser->name; ?>"></div>
-                <div class="c-footer"><span><?php echo $currentuser->name; ?></span><a href="view-profile.php">View Profile</a></div>
+                <div class="c-footer"><span><?php echo $currentuser->name; ?></span><a href="view-profile.php?id=<?= $currentuser->index; ?>">View Profile</a></div>
             </div>
         </div>
 
