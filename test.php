@@ -1,6 +1,4 @@
-<?
-
-
+<?php
     class User {
 
         public $user;
@@ -16,27 +14,36 @@
             return $this->user;
         }
 
-        public function singleUser ($index) {
+        public function singleUser ($index = '') {
+            if($index === '') {
+                return $this->singleuser = 'You selected no user';
+            }
             return $this->singleuser = $this->user[$index];
         }
 
-        public function name() {
-            if(isset($this->singleUser)) {
-                return $this->singleUser->name;
-            } else return false;
-        }
-
+        // public function getKeyVal($key, $val) {
+        //     $specified = array();
+        //     for($i = 0; $i < 500; $i++) {
+        //         if($this->singleUser($i)->$key == $val) {
+        //             echo $this->singleUser($i)->$key;
+        //             array_push($specified, $this->singleuser($i));
+        //         }
+        //     }
+        //     return $specified;    
+        // }
 
     }
 
-//
-//    $allUsers = new User('Appendix');
-////    var_dump($allUsers->getAllUsers());
-//  $currentUser = $allUsers->singleUser(8);
-// echo $currentUser->name . '<br>';
-// echo $currentUser->email;
 
+    $allUsers = new User('Appendix');
+//    var_dump($allUsers->getAllUsers());
 
+// for($i = 0; $i < 500; $i++) {
+//     $currentUser = $allUsers->singleUser($i);
+//     var_dump( $currentUser->tags). '<br>';
+// }
+
+//($allUsers->getKeyVal('isActive', 'true'));
 
 
 
