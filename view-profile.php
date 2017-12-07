@@ -20,6 +20,7 @@
                             <li><i class="fa fa-envelope-o"></i> Email:
                                 <?= $user->email; ?>
                             </li>
+                            <li><b>Date Registered: </b><br><br> <?= $user->registered; ?></li>
                         </ul>
                     </div>
                 </div>
@@ -43,8 +44,6 @@
                             <span>
                             <ul><li><i class = "fa fa-phone"></i> <?= $user->phone; ?></li>
                             <li><i class ="fa fa-envelope"></i> <?= $user->email; ?></li>
-                            <!--<li></li>
-                            <li></li>-->
                             </ul>
                         </span>
 
@@ -83,17 +82,22 @@
                     <div class="col-v-1">
                         <div class="about">
                             <h4>Mutual Friends</h4>
-                            <span>
-                           Mutual fiends
-                        </span>
+                            <? foreach ($user->friends as $friend) : ?>
+                            <ul>
+                                <span>
+                                    <li><i class = "fa fa-user"></i> <?= $friend->name; ?></li>
+                                </span>
+                            <? endforeach; ?>
+                            </ul>
                         </div>
-
                     </div>
                     <div class="col-v-1">
                         <div class="about">
                             <h4>Tags</h4>
+                            <? foreach ($user->tags as $tag) : ?>
                             <span>
-                           <ul><li>1. <?//= //$user->tags; ?></li></ul>
+                           <ul><li><?= $tag ?></li></ul>
+                                <? endforeach; ?>
                         </span>
                         </div>
 

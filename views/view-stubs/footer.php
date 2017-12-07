@@ -1,5 +1,5 @@
 <footer>
-    <div class = "container">
+    <div class = "inner-container">
         &copy; <?= date('Y'); ?> PHP. <br> Made with &hearts; From Planet Nest
     </div>
 </footer>
