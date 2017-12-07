@@ -24,7 +24,9 @@
                         </ul>
                     </div>
                 </div>
-
+                <div class = "back">
+                    <i class="fa fa-fw fa-arrow-left"></i> <a href="allteams.php">Go back</a>
+                </div>
             </div>
             <div class="col-vp-2">
                 <div class="other-content">
